@@ -61,6 +61,16 @@ function generateRandomNumberToHit() {
 }
 generateRandomNumberToHit();
 
+/**
+ * Adds event listeners to bubbles.
+ *
+ * This function selects all elements with the class "bubble" and adds a click event listener to each one. 
+ * When a bubble is clicked, the function checks if its text content matches the global variable "randomNumber".
+ * If there is a match, the bubble is removed from the DOM, the global array "randomNumArr" is updated to remove the matched number, 
+ * a new random number for hitting is picked, and the score displayed in the element with the id "scoreDisplayBox" is incremented by 1.
+ *
+ * @return {undefined} This function does not return a value.
+ */
 function addEventListenerToBubbles() {
     document.querySelectorAll('.bubble').forEach(bubble => {
         bubble.addEventListener('click', () => {
