@@ -17,7 +17,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(123, 161, 123); */
 }
 
 video {
@@ -35,7 +34,6 @@ video {
     width: 80%;
     height: 90%;
     border-radius: 10px;
-    overflow-x: hidden;
 }
 
 #ptop {
@@ -69,6 +67,7 @@ video {
 }
 
 #pbtm {
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,3 +97,54 @@ video {
 }
 
 /* CSS Breakpoints */
+@media (max-width:769px) {
+    #panel {
+        width: 95%;
+        height: 95%;
+    }
+
+    #ptop {
+        padding: 0 10%;
+        justify-content: space-evenly;
+    }
+
+    #difficultyElemContainer {
+        display: none;
+    }
+}
+
+@media (max-width:426px) {
+    .elem h2 {
+        font-size: 20px;
+    }
+
+    .box {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:376px) {
+    #panel {
+        width: 100%;
+        height: 100%;
+    }
+
+    #ptop {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width:321px) {
+    .elem h2 {
+        font-size: 14px;
+    }
+
+    .box {
+        font-size: 8px;
+    }
+
+    .bubble {
+        height: 30px;
+        width: 30px;
+    }
+}

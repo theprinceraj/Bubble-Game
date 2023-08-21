@@ -24,7 +24,13 @@ function generateBubble(bubbleCount, bubbleDimenions) {
 
     document.getElementById("pbtm").appendChild(fragment);
 }
-generateBubble(32, "100px");
+
+if (window.innerWidth > 320) {
+    generateBubble(32, "100px");
+}
+else {
+    generateBubble(32, "50px");
+}
 
 
 /**
