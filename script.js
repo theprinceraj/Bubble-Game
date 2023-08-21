@@ -4,15 +4,19 @@ let randomNumArr = [];
  *
  * @return {undefined} No return value
  */
-function generateBubble() {
+function generateBubble(bubbleCount, bubbleDimenions, bubbleMargin) {
     const fragment = document.createDocumentFragment();
 
-    for (let i = 1; i <= 189; i++) {
+    for (let i = 1; i <= bubbleCount; i++) {
         const randomNum = Math.ceil(Math.random() * 99);
         randomNumArr.push(randomNum);
 
         const bubble = document.createElement('div');
         bubble.classList.add('bubble');
+
+        bubble.style.height = bubbleDimenions;
+        bubble.style.width = bubbleDimenions;
+
         bubble.textContent = randomNum;
 
         fragment.appendChild(bubble);
@@ -20,16 +24,17 @@ function generateBubble() {
 
     document.getElementById("pbtm").appendChild(fragment);
 }
-generateBubble();
+generateBubble(36, "90px", "90px");
 
-let timerCount = 300;
+
 /**
  * Starts a timer that counts down from a specified value as stored in variable `timerCount`
  *
  * @return {undefined} This function does not return a value.
  */
-function startTimer() {
-    const intervalId = setInterval(() => {
+let intervalId;
+function startTimer(timerCount) {
+    intervalId = setInterval(() => {
         if (timerCount === 0 || timerCount < 0) {
             alert("Time Up!");
             clearInterval(intervalId);
@@ -41,7 +46,7 @@ function startTimer() {
         }
     }, 1000)
 }
-startTimer();
+startTimer(120);
 
 let randomNumber;
 /**
@@ -66,4 +71,34 @@ document.querySelectorAll('.bubble').forEach(bubble => {
         // timerCount = 300;
         // startTimer();
     })
+})
+
+const difficultyChoiceDropdown = document.querySelector('#difficultyChoiceBox');
+difficultyChoiceDropdown.addEventListener('change', () => {
+    document.querySelector('#pbtm').innerHTML = '';
+    randomNumArr = [];
+    clearInterval(intervalId);
+
+    const selectedDifficultyOption = difficultyChoiceDropdown.options[difficultyChoiceDropdown.selectedIndex];
+    const selectedDifficulty = selectedDifficultyOption.value;
+
+    switch (selectedDifficulty) {
+        case 'easy':
+            generateBubble(36, "90px", "90px");
+            generateRandomNumberToHit();
+            startTimer(120);
+            break;
+        case 'medium':
+            generateBubble(24, "60px", "60px");
+            generateRandomNumberToHit();
+            startTimer(300);
+            break;
+        case 'hard':
+            generateBubble(189, "35px", "35px");
+            generateRandomNumberToHit();
+            startTimer(600);
+            break;
+        default:
+            alert('Seems like an unknown error occured. Please try again.');
+    }
 })

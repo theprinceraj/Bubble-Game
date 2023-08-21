@@ -83,8 +83,8 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
-    width: 35px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.582);
     transition: 0.2s all ease;
