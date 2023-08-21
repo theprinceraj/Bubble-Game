@@ -65,6 +65,7 @@ function addEventListenerToBubbles() {
     document.querySelectorAll('.bubble').forEach(bubble => {
         bubble.addEventListener('click', () => {
             if (bubble.textContent == randomNumber) {
+                randomNumArr.splice(randomNumArr.indexOf(parseInt(bubble.textContent)), 1);
                 bubble.remove();
                 generateRandomNumberToHit();
                 document.querySelector("#scoreDisplayBox").textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
