@@ -13,11 +13,11 @@ Welcome to the Bubble Game! This is a simple and fun web-based game where you ne
 
 ## Try It Out
 
-Play the game here: [Bubble Game](https://your-game-url-here.com)
+Play the game here: [Bubble Game](https://theprinceraj.github.io/Bubble-Game/)
 
 ## Screenshots
 
-Insert some screenshots of your game in action here.
+will be added soon
 
 ## Getting Started
 
