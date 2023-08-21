@@ -24,7 +24,7 @@ function generateBubble(bubbleCount, bubbleDimenions) {
 
     document.getElementById("pbtm").appendChild(fragment);
 }
-generateBubble(36, "100px");
+generateBubble(32, "100px");
 
 
 /**
@@ -85,7 +85,7 @@ difficultyChoiceDropdown.addEventListener('change', () => {
 
     switch (selectedDifficulty) {
         case 'easy':
-            generateBubble(36, "100px");
+            generateBubble(32, "100px");
             generateRandomNumberToHit();
             addEventListenerToBubbles();
             startTimer(120);
