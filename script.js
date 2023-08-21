@@ -34,10 +34,10 @@ document.querySelectorAll('.bubble').forEach(bubble => {
     bubble.addEventListener('click', () => {
         if (bubble.textContent == randomNumber) {
             bubble.remove();
-            document.querySelector("#scoreDisplayBox").textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
             generateRandomNumberToHit();
+            document.querySelector("#scoreDisplayBox").textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
         }
-        timerCount = 300;
-        startTimer();
+        // timerCount = 300;
+        // startTimer();
     })
 })
