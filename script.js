@@ -46,7 +46,7 @@ function startTimer(timerCount) {
         }
     }, 1000)
 }
-startTimer(120);
+startTimer(150);
 
 let randomNumber;
 /**
@@ -99,19 +99,19 @@ difficultyChoiceDropdown.addEventListener('change', () => {
             generateBubble(32, "100px");
             generateRandomNumberToHit();
             addEventListenerToBubbles();
-            startTimer(120);
+            startTimer(150);
             break;
         case 'medium':
             generateBubble(36, "60x");
             generateRandomNumberToHit();
             addEventListenerToBubbles();
-            startTimer(300);
+            startTimer(330);
             break;
         case 'hard':
             generateBubble(100, "45px");
             generateRandomNumberToHit();
             addEventListenerToBubbles();
-            startTimer(600);
+            startTimer(630);
             break;
         default:
             alert('Seems like an unknown error occured. Please try again.');
