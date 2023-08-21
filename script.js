@@ -91,7 +91,7 @@ difficultyChoiceDropdown.addEventListener('change', () => {
             startTimer(120);
             break;
         case 'medium':
-            generateBubble(50, "70x");
+            generateBubble(36, "60x");
             generateRandomNumberToHit();
             addEventListenerToBubbles();
             startTimer(300);
