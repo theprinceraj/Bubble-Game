@@ -1,16 +1,15 @@
 let randomNumArr = [];
-const generateBubble = () => {
+(function generateBubble() {
     var clutter = '';
     for (let i = 1; i <= 189; i++) {
         randomNumArr.push(Math.ceil(Math.random() * 99))
         clutter += `<div class="bubble">${randomNumArr[randomNumArr.length - 1]}</div>`;
     }
     document.getElementById("pbtm").innerHTML = clutter;
-}
-generateBubble();
+})(); // generateBubble();
 
 let timerCount = 300;
-const startTimer = () => {
+(function startTimer() {
     const intervalId = setInterval(() => {
         if (timerCount === 0 || timerCount < 0) {
             alert("Time Up!");
@@ -22,25 +21,23 @@ const startTimer = () => {
             document.querySelector("#timerLiveCount").textContent = `${timerCount}s`;
         }
     }, 1000)
-}
-startTimer();
+})(); // startTimer();
 
 let randomNumber;
-const generateRandomNumberToHit = () => {
+(function generateRandomNumberToHit() {
     randomNumber = randomNumArr[Math.floor(Math.random() * randomNumArr.length)];
-    document.querySelector("#numberToHit").textContent = randomNumber;
+    document.querySelector("#numberToHitDisplayBox").textContent = randomNumber;
     return randomNumber;
-}
-generateRandomNumberToHit();
+})(); // generateRandomNumberToHit();
 
 document.querySelectorAll('.bubble').forEach(bubble => {
     bubble.addEventListener('click', () => {
-        console.log(randomNumber, bubble.textContent)
-        if(bubble.textContent == randomNumber){
+        if (bubble.textContent == randomNumber) {
             bubble.remove();
+            document.querySelector("#scoreDisplayBox").textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
             generateRandomNumberToHit();
         }
-        // timerCount = 300;
-        // startTimer();
+        timerCount = 300;
+        startTimer();
     })
 })
