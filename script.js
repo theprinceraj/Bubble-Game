@@ -1,7 +1,9 @@
+let randomNumArr = [];
 const generateBubble = () => {
     var clutter = '';
     for (let i = 1; i <= 189; i++) {
-        clutter += `<div class="bubble">${Math.ceil(Math.random() * 25)}</div>`;
+        randomNumArr.push(Math.ceil(Math.random() * 25))
+        clutter += `<div class="bubble">${randomNumArr[randomNumArr.length - 1]}</div>`;
     }
     document.getElementById("pbtm").innerHTML = clutter;
 }
@@ -22,3 +24,9 @@ const startTimer = () => {
     }, 1000)
 }
 startTimer();
+
+const generateRandomNumberToHit = () => {
+    const randomNumber = randomNumArr[Math.floor(Math.random() * randomNumArr.length)];
+    document.querySelector("#numberToHit").textContent = randomNumber;
+}
+generateRandomNumberToHit();
