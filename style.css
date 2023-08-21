@@ -35,7 +35,7 @@ video {
     width: 80%;
     height: 90%;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #ptop {
@@ -71,7 +71,7 @@ video {
 #pbtm {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     height: calc(100% - 100px);
     width: 100%;
@@ -94,5 +94,5 @@ video {
 .bubble:hover {
     cursor: pointer;
     box-shadow: 0 0 6px 1px white;
-    scale: 1.2;
+    scale: 1.04;
 }

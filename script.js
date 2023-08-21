@@ -4,7 +4,7 @@ let randomNumArr = [];
  *
  * @return {undefined} No return value
  */
-function generateBubble(bubbleCount, bubbleDimenions, bubbleMargin) {
+function generateBubble(bubbleCount, bubbleDimenions) {
     const fragment = document.createDocumentFragment();
 
     for (let i = 1; i <= bubbleCount; i++) {
@@ -24,7 +24,7 @@ function generateBubble(bubbleCount, bubbleDimenions, bubbleMargin) {
 
     document.getElementById("pbtm").appendChild(fragment);
 }
-generateBubble(36, "90px", "90px");
+generateBubble(36, "100px");
 
 
 /**
@@ -61,17 +61,18 @@ function generateRandomNumberToHit() {
 }
 generateRandomNumberToHit();
 
-document.querySelectorAll('.bubble').forEach(bubble => {
-    bubble.addEventListener('click', () => {
-        if (bubble.textContent == randomNumber) {
-            bubble.remove();
-            generateRandomNumberToHit();
-            document.querySelector("#scoreDisplayBox").textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
-        }
-        // timerCount = 300;
-        // startTimer();
+function addEventListenerToBubbles() {
+    document.querySelectorAll('.bubble').forEach(bubble => {
+        bubble.addEventListener('click', () => {
+            if (bubble.textContent == randomNumber) {
+                bubble.remove();
+                generateRandomNumberToHit();
+                document.querySelector("#scoreDisplayBox").textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
+            }
+        })
     })
-})
+}
+addEventListenerToBubbles();
 
 const difficultyChoiceDropdown = document.querySelector('#difficultyChoiceBox');
 difficultyChoiceDropdown.addEventListener('change', () => {
@@ -84,18 +85,21 @@ difficultyChoiceDropdown.addEventListener('change', () => {
 
     switch (selectedDifficulty) {
         case 'easy':
-            generateBubble(36, "90px", "90px");
+            generateBubble(36, "100px");
             generateRandomNumberToHit();
+            addEventListenerToBubbles();
             startTimer(120);
             break;
         case 'medium':
-            generateBubble(24, "60px", "60px");
+            generateBubble(50, "70x");
             generateRandomNumberToHit();
+            addEventListenerToBubbles();
             startTimer(300);
             break;
         case 'hard':
-            generateBubble(189, "35px", "35px");
+            generateBubble(100, "45px");
             generateRandomNumberToHit();
+            addEventListenerToBubbles();
             startTimer(600);
             break;
         default:
