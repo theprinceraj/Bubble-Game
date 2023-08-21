@@ -1,15 +1,34 @@
 let randomNumArr = [];
-(function generateBubble() {
-    var clutter = '';
+/**
+ * Generates div elements with bubble class having random numbers and ultimately appending it to the "pbtm" element.
+ *
+ * @return {undefined} No return value
+ */
+function generateBubble() {
+    const fragment = document.createDocumentFragment();
+
     for (let i = 1; i <= 189; i++) {
-        randomNumArr.push(Math.ceil(Math.random() * 99))
-        clutter += `<div class="bubble">${randomNumArr[randomNumArr.length - 1]}</div>`;
+        const randomNum = Math.ceil(Math.random() * 99);
+        randomNumArr.push(randomNum);
+
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+        bubble.textContent = randomNum;
+
+        fragment.appendChild(bubble);
     }
-    document.getElementById("pbtm").innerHTML = clutter;
-})(); // generateBubble();
+
+    document.getElementById("pbtm").appendChild(fragment);
+}
+generateBubble();
 
 let timerCount = 300;
-(function startTimer() {
+/**
+ * Starts a timer that counts down from a specified value as stored in variable `timerCount`
+ *
+ * @return {undefined} This function does not return a value.
+ */
+function startTimer() {
     const intervalId = setInterval(() => {
         if (timerCount === 0 || timerCount < 0) {
             alert("Time Up!");
@@ -21,14 +40,21 @@ let timerCount = 300;
             document.querySelector("#timerLiveCount").textContent = `${timerCount}s`;
         }
     }, 1000)
-})(); // startTimer();
+}
+startTimer();
 
 let randomNumber;
-(function generateRandomNumberToHit() {
+/**
+ * Picks a random number from the array 'randomNumArr' and displays it in the element with the id 'numberToHitDisplayBox'.
+ *
+ * @return {number} The randomly picked number.
+ */
+function generateRandomNumberToHit() {
     randomNumber = randomNumArr[Math.floor(Math.random() * randomNumArr.length)];
     document.querySelector("#numberToHitDisplayBox").textContent = randomNumber;
     return randomNumber;
-})(); // generateRandomNumberToHit();
+}
+generateRandomNumberToHit();
 
 document.querySelectorAll('.bubble').forEach(bubble => {
     bubble.addEventListener('click', () => {

@@ -77,22 +77,21 @@ video {
 }
 
 .bubble {
+    color: white;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    /* background-color: rgb(10, 138, 10); */
     background-color: rgba(0, 0, 0, 0.582);
     transition: 0.2s all ease;
     margin: 5px;
-    color: white;
-    font-weight: 600;
 }
 
 .bubble:hover {
     cursor: pointer;
-    box-shadow: 0 0 10px 2px white;
-    scale: 1.3;
+    box-shadow: 0 0 6px 1px white;
+    scale: 1.2;
 }
