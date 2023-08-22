@@ -12,6 +12,7 @@ let randomNumArr = [];
  *
  * @return {undefined} No return value
  */
+const panelBottom = document.getElementById("pbtm");
 function generateBubble(bubbleCount, bubbleDimenions) {
     const fragment = document.createDocumentFragment();
 
@@ -30,7 +31,7 @@ function generateBubble(bubbleCount, bubbleDimenions) {
         fragment.appendChild(bubble);
     }
 
-    document.getElementById("pbtm").appendChild(fragment);
+    panelBottom.appendChild(fragment);
 }
 
 
@@ -45,6 +46,7 @@ function startTimer(timerCount) {
         if (timerCount === 0 || timerCount < 0) {
             // alert("Time Up!");
             document.querySelector('#loserMessageModalContainer').style.display = 'flex'
+            panelBottom.innerHTML = '';
             clearInterval(intervalId);
         }
         else if (randomNumArr.length === 0) {
@@ -107,6 +109,7 @@ const difficultyChoiceDropdown = document.querySelector('#difficultyChoiceBox');
 difficultyChoiceDropdown.addEventListener('change', () => {
     document.querySelector('#pbtm').innerHTML = '';
     randomNumArr = [];
+    scoreDisplayBox.textContent = '0';
     clearInterval(intervalId);
 
     const selectedDifficultyOption = difficultyChoiceDropdown.options[difficultyChoiceDropdown.selectedIndex];
