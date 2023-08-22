@@ -2,7 +2,7 @@
 
 Welcome to the Bubble Game! This is a simple and fun web-based game where you need to pop bubbles that match a randomly generated target number. The game is built using HTML, CSS, and JavaScript.
 
-![Bubble Game Screenshot](screenshot.png)
+![Bubble Game Screenshot](https://github.com/theprinceraj/Bubble-Game/assets/116755566/5d4119a7-dd6f-494a-99f3-47c921150b77)
 
 ## Gameplay
 
@@ -47,7 +47,7 @@ Desktop/Laptop:
 <img width="922" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/608e2583-fb00-42f4-b31a-ffe4a6e5cdca">
 <br>
 Mobile:
-<img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/f3b990ad-3ade-49ba-8e8c-30ed0b9f9081">
+Mobile screenshots soon!
 
 ## How to Contribute
 
