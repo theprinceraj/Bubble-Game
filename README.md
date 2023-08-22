@@ -15,16 +15,6 @@ Welcome to the Bubble Game! This is a simple and fun web-based game where you ne
 
 Play the game here: [Bubble Game](https://theprinceraj.github.io/Bubble-Game/)
 
-## Screenshots
-
-Desktop/Laptop:
-<img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/5d4119a7-dd6f-494a-99f3-47c921150b77">
-<img width="908" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/662632f8-356a-49e9-8043-c6f501024439">
-<img width="909" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/e4251744-0717-4115-a513-4136ed65ec5d">
-<br>
-Mobile:
-<img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/f3b990ad-3ade-49ba-8e8c-30ed0b9f9081">
-
 ## Getting Started
 
 To run the game locally on your machine, follow these steps:
@@ -46,6 +36,16 @@ To run the game locally on your machine, follow these steps:
 - HTML
 - CSS
 - JavaScript
+
+## Screenshots
+
+Desktop/Laptop:
+<img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/5d4119a7-dd6f-494a-99f3-47c921150b77">
+<img width="908" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/662632f8-356a-49e9-8043-c6f501024439">
+<img width="909" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/e4251744-0717-4115-a513-4136ed65ec5d">
+<br>
+Mobile:
+<img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/f3b990ad-3ade-49ba-8e8c-30ed0b9f9081">
 
 ## How to Contribute
 
