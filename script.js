@@ -38,6 +38,9 @@ function startTimer(timerCount) {
             alert("Time Up!");
             clearInterval(intervalId);
         }
+        else if (randomNumArr.length === 0) {
+            document.querySelector('#winnerMessageModalContainer').style.display = 'fixed'
+        }
         else {
             timerCount--;
             document.querySelector("#timerLiveCount").textContent = `${timerCount}s`;
