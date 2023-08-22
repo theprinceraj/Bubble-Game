@@ -194,7 +194,15 @@ video {
 }
 
 @media (max-width:511px) {
-    ::-webkit-scrollbar {
+    ::-webkit-scrollbar-thumb {
+        display: none !important;
+    }
+
+    ::-moz-scrollbar {
+        display: none !important;
+    }
+
+    ::-ms-scrollbar {
         display: none !important;
     }
 
