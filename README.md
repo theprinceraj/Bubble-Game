@@ -43,6 +43,7 @@ Desktop/Laptop:
 <img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/5d4119a7-dd6f-494a-99f3-47c921150b77">
 <img width="908" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/662632f8-356a-49e9-8043-c6f501024439">
 <img width="909" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/e4251744-0717-4115-a513-4136ed65ec5d">
+<img width="922" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/c02a4cc5-ba9a-4c2e-8502-1045af8abc4d">
 <br>
 Mobile:
 <img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/f3b990ad-3ade-49ba-8e8c-30ed0b9f9081">
