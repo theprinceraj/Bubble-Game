@@ -52,7 +52,6 @@ function startTimer(timerCount) {
         currentTimerCount = timerCount;
     }, 1000)
 }
-startTimer(150);
 
 let randomNumber;
 /**
@@ -65,7 +64,7 @@ function generateRandomNumberToHit() {
     document.querySelector("#numberToHitDisplayBox").textContent = randomNumber;
     return randomNumber;
 }
-generateRandomNumberToHit();
+
 
 /**
  * Adds event listeners to bubbles.
@@ -122,4 +121,13 @@ difficultyChoiceDropdown.addEventListener('change', () => {
         default:
             alert('Seems like an unknown error occured. Please try again.');
     }
+})
+
+// JavaScript for Various Modals
+const startGameModalButton = document.querySelector('#startGameModalButton');
+startGameModalButton.addEventListener('click', () => {
+    document.querySelector('#startGameModalContainer').style.display = 'none';
+    addEventListenerToBubbles();
+    generateRandomNumberToHit();
+    startTimer(150);
 })
