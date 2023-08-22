@@ -198,15 +198,15 @@ video {
 
 @media (max-width:511px) {
     ::-webkit-scrollbar-thumb {
-        display: none !important;
+        background-color: #33333341;
     }
 
     ::-moz-scrollbar {
-        display: none !important;
+        background-color: #33333341;
     }
 
     ::-ms-scrollbar {
-        display: none !important;
+        background-color: #33333341;
     }
 
     .elem h2 {
