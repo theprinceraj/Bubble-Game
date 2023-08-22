@@ -90,7 +90,13 @@ function addEventListenerToBubbles() {
                 randomNumArr.splice(randomNumArr.indexOf(parseInt(bubble.textContent)), 1);
                 bubble.remove();
                 generateRandomNumberToHit();
-                scoreDisplayBox.textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
+                scoreDisplayBox.textContent = parseInt(scoreDisplayBox.textContent) + 10;
+            }
+            else {
+                alert('Wrong Bubble!');
+                if (parseInt(scoreDisplayBox.textContent) !== 0) {
+                    scoreDisplayBox.textContent = parseInt(scoreDisplayBox.textContent) - 5;
+                }
             }
         })
     })
