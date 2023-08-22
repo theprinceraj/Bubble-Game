@@ -171,6 +171,10 @@ video {
     background-color: rgb(61, 61, 61);
 }
 
+#winnerMessageModalContainer {
+    display: none;
+}
+
 /* CSS Breakpoints */
 @media (max-width:769px) {
     #panel {

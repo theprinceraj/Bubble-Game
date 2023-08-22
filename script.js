@@ -130,3 +130,9 @@ startGameModalButton.addEventListener('click', () => {
     generateRandomNumberToHit();
     startTimer(150);
 })
+
+const playAgainModalButton = document.querySelector('#playAgainModalButton');
+playAgainModalButton.addEventListener('click', () => {
+    document.querySelector('#winnerMessageModalContainer').style.display = 'none';
+    document.querySelector('#startGameModalContainer').style.display = 'flex';
+})
