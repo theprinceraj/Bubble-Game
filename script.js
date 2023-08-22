@@ -1,3 +1,11 @@
+window.addEventListener("beforeunload", (event) => {
+    if (score > 0) {
+        // Display a confirmation message
+        event.returnValue = "Leaving this page will reset your score. Are you sure you want to leave?";
+    }
+});
+
+
 let randomNumArr = [];
 /**
  * Generates div elements with bubble class having random numbers and ultimately appending it to the "pbtm" element.
@@ -72,6 +80,7 @@ function generateRandomNumberToHit() {
  *
  * @return {undefined} This function does not return a value.
  */
+const scoreDisplayBox = document.querySelector("#scoreDisplayBox");
 function addEventListenerToBubbles() {
     document.querySelectorAll('.bubble').forEach(bubble => {
         bubble.addEventListener('click', () => {
@@ -79,7 +88,7 @@ function addEventListenerToBubbles() {
                 randomNumArr.splice(randomNumArr.indexOf(parseInt(bubble.textContent)), 1);
                 bubble.remove();
                 generateRandomNumberToHit();
-                document.querySelector("#scoreDisplayBox").textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
+                scoreDisplayBox.textContent = parseInt(document.querySelector("#scoreDisplayBox").textContent) + 1;
             }
         })
     })
