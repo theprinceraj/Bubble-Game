@@ -79,7 +79,7 @@ video {
 }
 
 .box {
-    color: rgb(12, 94, 12);
+    color: black;
     font-weight: 600;
     font-size: 25px;
     border-radius: 5px;
@@ -194,6 +194,10 @@ video {
 }
 
 @media (max-width:511px) {
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
     .elem h2 {
         font-size: 20px;
     }
