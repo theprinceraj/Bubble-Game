@@ -49,6 +49,7 @@ function startTimer(timerCount) {
         }
         else if (randomNumArr.length === 0) {
             document.querySelector('#winnerMessageModalContainer').style.display = 'flex'
+            clearInterval(intervalId);
         }
         else {
             timerCount--;
