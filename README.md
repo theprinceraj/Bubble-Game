@@ -17,7 +17,8 @@ Play the game here: [Bubble Game](https://theprinceraj.github.io/Bubble-Game/)
 
 ## Screenshots
 
-will be added soon
+<img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/5d4119a7-dd6f-494a-99f3-47c921150b77">
+
 
 ## Getting Started
 
