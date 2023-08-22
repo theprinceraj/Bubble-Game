@@ -19,6 +19,7 @@ Play the game here: [Bubble Game](https://theprinceraj.github.io/Bubble-Game/)
 
 Desktop/Laptop:
 <img width="916" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/5d4119a7-dd6f-494a-99f3-47c921150b77">
+<br>
 Mobile:
 ![image](https://github.com/theprinceraj/Bubble-Game/assets/116755566/f3b990ad-3ade-49ba-8e8c-30ed0b9f9081)
 
