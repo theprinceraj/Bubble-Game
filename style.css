@@ -117,6 +117,18 @@ video {
     scale: 1.04;
 }
 
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    border: 2px solid yellow;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    z-index: 2;
+}
+
 /* CSS Breakpoints */
 @media (max-width:769px) {
     #panel {

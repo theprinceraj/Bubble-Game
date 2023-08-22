@@ -38,18 +38,18 @@ else {
  *
  * @return {undefined} This function does not return a value.
  */
-let intervalId;
+let intervalId, currentTimerCount;
 function startTimer(timerCount) {
     intervalId = setInterval(() => {
         if (timerCount === 0 || timerCount < 0) {
             alert("Time Up!");
             clearInterval(intervalId);
-            return;
         }
         else {
             timerCount--;
             document.querySelector("#timerLiveCount").textContent = `${timerCount}s`;
         }
+        currentTimerCount = timerCount;
     }, 1000)
 }
 startTimer(150);
