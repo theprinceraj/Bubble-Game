@@ -1,7 +1,7 @@
 window.addEventListener("beforeunload", (event) => {
     if (parseInt(scoreDisplayBox.textContent) > 0) {
         // Display a confirmation message
-        event.returnValue = "Leaving this page will reset your score. Are you sure you want to leave?";
+        event.returnValue = "Leaving/reloading this page will reset your score. Are you sure you want to leave?";
     }
 });
 
