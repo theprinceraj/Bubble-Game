@@ -146,12 +146,15 @@ video {
     color: white;
     background-color: black;
     font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .modalBtm {
     padding: 5px 20px;
     background-color: white;
     font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .modal-button {
@@ -183,15 +186,24 @@ video {
     #difficultyElemContainer {
         display: none;
     }
+
+    .modal {
+        top: 30vh;
+        left: 25vw;
+    }
 }
 
-@media (max-width:426px) {
+@media (max-width:511px) {
     .elem h2 {
         font-size: 20px;
     }
 
     .box {
         font-size: 14px;
+    }
+
+    .modal {
+        left: 10vw;
     }
 }
 
@@ -203,6 +215,11 @@ video {
 
     #ptop {
         padding: 0 5%;
+    }
+
+    .modal {
+        scale: 0.8;
+        left: 7vw;
     }
 }
 
@@ -218,5 +235,10 @@ video {
     .bubble {
         height: 30px;
         width: 30px;
+    }
+
+    .modal {
+        left: 2vw;
+        scale: 0.65;
     }
 }

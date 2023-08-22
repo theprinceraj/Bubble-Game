@@ -25,13 +25,6 @@ function generateBubble(bubbleCount, bubbleDimenions) {
     document.getElementById("pbtm").appendChild(fragment);
 }
 
-if (window.innerWidth > 320) {
-    generateBubble(32, "100px");
-}
-else {
-    generateBubble(32, "50px");
-}
-
 
 /**
  * Starts a timer that counts down from a specified value as stored in variable `timerCount`
@@ -127,6 +120,12 @@ difficultyChoiceDropdown.addEventListener('change', () => {
 const startGameModalButton = document.querySelector('#startGameModalButton');
 startGameModalButton.addEventListener('click', () => {
     document.querySelector('#startGameModalContainer').style.display = 'none';
+    if (window.innerWidth > 320) {
+        generateBubble(32, "100px");
+    }
+    else {
+        generateBubble(32, "50px");
+    }
     addEventListenerToBubbles();
     generateRandomNumberToHit();
     startTimer(150);
