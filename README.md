@@ -47,7 +47,8 @@ Desktop/Laptop:
 <img width="922" alt="image" src="https://github.com/theprinceraj/Bubble-Game/assets/116755566/608e2583-fb00-42f4-b31a-ffe4a6e5cdca">
 <br>
 Mobile:
-Mobile screenshots soon!
+<img width="" alt="image" src="https://i.ibb.co/5xqLLNB/Screenshot-2023-08-22-22-31-16-12-40deb401b9ffe8e1df2f1cc5ba480b12.jpg">
+
 
 ## How to Contribute
 
