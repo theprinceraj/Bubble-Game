@@ -53,10 +53,6 @@ Mobile screenshots soon!
 
 Contributions are welcome! If you'd like to contribute to the game, feel free to open a pull request. You can suggest improvements, report issues, or help enhance the gameplay.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 Have fun playing the Bubble Game! Feel free to reach out if you have any questions or feedback.
