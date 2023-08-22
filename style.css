@@ -175,6 +175,10 @@ video {
     display: none;
 }
 
+#loserMessageModalContainer {
+    display: none;
+}
+
 /* CSS Breakpoints */
 @media (max-width:769px) {
     #panel {

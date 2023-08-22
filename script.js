@@ -43,11 +43,12 @@ let intervalId, currentTimerCount;
 function startTimer(timerCount) {
     intervalId = setInterval(() => {
         if (timerCount === 0 || timerCount < 0) {
-            alert("Time Up!");
+            // alert("Time Up!");
+            document.querySelector('#loserMessageModalContainer').style.display = 'flex'
             clearInterval(intervalId);
         }
         else if (randomNumArr.length === 0) {
-            document.querySelector('#winnerMessageModalContainer').style.display = 'fixed'
+            document.querySelector('#winnerMessageModalContainer').style.display = 'flex'
         }
         else {
             timerCount--;
@@ -146,5 +147,11 @@ startGameModalButton.addEventListener('click', () => {
 const playAgainModalButton = document.querySelector('#playAgainModalButton');
 playAgainModalButton.addEventListener('click', () => {
     document.querySelector('#winnerMessageModalContainer').style.display = 'none';
+    document.querySelector('#startGameModalContainer').style.display = 'flex';
+})
+
+const tryAgainModalButton = document.querySelector('#tryAgainModalButton');
+tryAgainModalButton.addEventListener('click', () => {
+    document.querySelector('#loserMessageModalContainer').style.display = 'none';
     document.querySelector('#startGameModalContainer').style.display = 'flex';
 })
